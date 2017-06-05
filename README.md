@@ -1,2 +1,2 @@
 # ceep
-Aplicativos simples para salvar lembretes
+Um simples aplicativo para salvar lembretes!
