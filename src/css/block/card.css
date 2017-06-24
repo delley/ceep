@@ -1,3 +1,16 @@
+[data-color="first"] {
+  background-color: #EBEF40;
+}
+[data-color="second"] {
+  background-color: #FF1010;
+}
+[data-color="third"] {
+  background-color: #45AAEE;
+}
+[data-color="fourth"] {
+  background-color: #76EF40;
+}
+
 .card {
   display: inline-block;
   box-sizing: border-box;
@@ -6,47 +19,29 @@
   position: relative;
 }
 
-.card-colors {
+.wrap-card-options {
+  position: absolute;
+  top: -16px;
+  left: 0;
+}
+.card_delete {
+  background-color: white;
+  background-image: url('/images/delete.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+.card-options {
   display: inline-block;
+  box-sizing: border-box;
   width: 32px;
   height: 32px;
+  text-indent: -9999px;
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid rgba(0 , 0, 0, 0.5);
 }
 
-.card_colorFirst {
-  background-color: #EBEF40;
-}
-.card_colorSecond {
-  background-color: #FF1010;
-}
-.card_colorThird {
-  background-color: #45AAEE;
-}
-.card_colorFourth {
-  background-color: #76EF40;
-}
-
-.wrap-card-colors {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.card-colors_colorFirst {
-  background-color: #EBEF40;
-  color: #EBEF40;
-}
-.card-colors_colorSecond {
-  background-color: #FF1010;
-  color: #FF1010;
-}
-.card-colors_colorThird {
-  background-color: #45AAEE;
-  color: #45AAEE;
-}
-.card-colors_colorFourth {
-  background-color: #76EF40;
-  color: #76EF40;
+.card-options.isActive {
+  border-width: 4px;
 }
